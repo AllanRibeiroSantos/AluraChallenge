@@ -1,0 +1,75 @@
+:root {
+	--mainColor: #051D3B;
+	--titleFont: 21px;
+	--bodyFont: 16px;
+	--sidebarFont: 12px;
+
+	--inputNormal: rgba(255, 255, 255, 0.16);
+	--inputHover: rgba(255, 255, 255, 0.24);
+	
+	--iconHover: rgba(255, 255, 255, 0.08);
+	--iconPressed: rgba(255, 255, 255, 0.16);
+}
+
+body {
+	background-color: var(--mainColor);
+	color: white;
+	padding: 36px;
+	font-size: var(--bodyFont);
+}
+
+.titulos {
+	font-weight: bold;
+}
+
+/* HEADER */
+
+.mainHeader .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logoAlura {
+	width: 200px;
+}
+
+input {
+	background-color: var(--inputNormal);
+	border: none;
+	border-radius: 8px;
+	box-sizing: border-box;
+	padding: 16px 14px;
+	color: #FFF;
+	font-size: var(--bodyFont);
+}
+
+input:hover {
+	background-color: var(--inputHover);
+}
+
+#formSearch {
+	height: 56px;
+	width: 752px;
+}
+
+.contextoAvatar {
+	display: flex;
+	align-items: center;
+	padding: 12px;
+}
+
+.contextoAvatar:hover {
+	background-color: var(--iconHover);
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.avatar {
+	height: 32px;
+	width: 32px;
+	border-radius: 100%;
+	margin-right: 8px;
+}
+
+/* MAIN */
