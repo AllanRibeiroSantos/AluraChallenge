@@ -14,6 +14,6 @@ Outras pessoas poderão fazer um cadastro na plataforma, observar e interagir co
 
 A aplicação deverá ser responsiva (smartphone, tablet, desktop).
 
-Ilustração de como deverá ficar:
+Ilustração de como deverá ficar
 
 <div align="center"><img src="https://user-images.githubusercontent.com/61354355/148084371-d79df7bc-e2c9-4d18-83f9-7a55921ced14.png" width="700px"></div>
