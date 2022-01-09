@@ -14,7 +14,7 @@
 body {
 	background-color: var(--mainColor);
 	color: white;
-	padding: 36px;
+	padding: 32px;
 	font-size: var(--bodyFont);
 }
 
@@ -28,6 +28,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.containerLogo {
+	width: 272px;
 }
 
 .logoAlura {
@@ -53,6 +57,13 @@ input:hover {
 	width: 752px;
 }
 
+.containerAvatar {
+	width: 272px;
+	display: flex;
+	justify-content: end;
+	/* Faz com que o avatar fique sempre do lado direito da página */
+}
+
 .contextoAvatar {
 	display: flex;
 	align-items: center;
@@ -73,3 +84,32 @@ input:hover {
 }
 
 /* MAIN */
+
+main .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menuLateralEsquerdo {
+	background-color: #FFF;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+	flex-grow: 1;
+}
+
+.editorCodigo {
+	background-color: #FFF;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+	flex-grow: 3;
+}
+
+.menuLateralDireito {
+	background-color: #FFF;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+	flex-grow: 1;
+}
