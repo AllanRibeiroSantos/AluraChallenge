@@ -129,6 +129,7 @@ input:hover {
 main .container {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 20px;
 }
 
 .menuLateralEsquerdo {
@@ -140,16 +141,23 @@ main .container {
 .menuLateralEsquerdo section {
 	display: flex;
 	align-items: center;
+	margin-top: 16px;
 }
 
-.slashIcon {
+.icons {
 	width: 48px;
 	height: 48px;
 	border-radius: 16px;
-	background-color: var(--filledNormalButton);
+	margin-right: 16px;
+	background-color: var(--outlinedNormalButton);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.icons:hover {
+	background-color: var(--filledNormalButton);
+	/* A ideia é de ficar com essa cor apenas se você estiver na página referente */
 }
 
 .editorCodigo {
