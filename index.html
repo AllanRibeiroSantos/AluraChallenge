@@ -7,6 +7,12 @@
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main-style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+	<link href='https://css.gg/code-slash.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -15,7 +21,7 @@
 			<div class="containerLogo">
 				<img src="img/logo-alura.png" class="logoAlura">
 			</div>
-			<form>
+			<form class="formSearch">
 				<input type="text" id="formSearch" placeholder="Busque por algo">
 			</form>
 			<div class="containerAvatar">
@@ -29,9 +35,43 @@
 
 	<main>
 		<div class="container">
-			<div class="menuLateralEsquerdo"></div>
-			<div class="editorCodigo"></div>
-			<div class="menuLateralDireito"></div>
+			<div class="menuLateralEsquerdo">
+				<p class="sidebarFont">Menu</p>
+				<section>
+					<div class="slashIcon">
+						<i class="gg-code-slash"></i>
+					</div>
+					<p>Editor de Código</p>
+				</section>
+				<section>Comunidade</section>
+			</div>
+			<div class="editorCodigo">
+				<div>
+					<section class="fundoEditor"></section>
+					<section class="editor"></section>
+				</div>
+				<div>
+					<form action="">
+						<input type="button" value="Visualizar com o highlight" class="outlinedButton">
+					</form>
+				</div>
+			</div>
+			<div class="menuLateralDireito">
+				<form>
+					<fieldset>
+						<label for="" class="sidebarFont">Seu Projeto</label>
+						<input type="text">
+						<input type="text">
+					</fieldset>
+
+					<fieldset>
+						<label for="" class="sidebarFont">Personalização</label>
+						<input type="text">
+						<input type="text">
+						<input type="button" value="Salvar Projeto" class="filledButton">
+					</fieldset>
+				</form>
+			</div>
 		</div>
 	</main>
 

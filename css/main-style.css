@@ -9,17 +9,68 @@
 	
 	--iconHover: rgba(255, 255, 255, 0.08);
 	--iconPressed: rgba(255, 255, 255, 0.16);
+
+	--filledNormalButton: #5081FB;
+	--filledHoverPressedButton: #7BA4FC;
+	--filledPressedButtonBorder: rgba(80, 129, 251, 0.72);
+	--filledFocusButton: #96B9FD;
+	
+	--outlinedNormalButton: rgba(80, 129, 251, 0.08);
+	--outlinedHoverPressedButton: rgba(80, 129, 251, 0.16);
+	--outlinedPressedButtonBorder: rgba(80, 129, 251, 0.24);
+	--outlinedFocusButton: rgba(80, 129, 251, 0.24);
+
+	--fundoEditor: #6BD1FF;
 }
 
 body {
 	background-color: var(--mainColor);
 	color: white;
 	padding: 32px;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: var(--bodyFont);
 }
 
 .titulos {
-	font-weight: bold;
+	font-weight: bold;	
+}
+
+.sidebarFont {
+	font-size: var(--sidebarFont);
+	text-transform: uppercase;
+}
+
+input {
+	background-color: var(--inputNormal);
+	border: none;
+	border-radius: 8px;
+	box-sizing: border-box;
+	padding: 16px 14px;
+	color: #FFF;
+	font-size: var(--bodyFont);
+}
+
+input:hover {
+	background-color: var(--inputHover);
+}
+
+.filledButton {
+	background-color: var(--filledNormalButton);
+	color: var(--mainColor);
+}
+
+.filledButton:hover {
+	background-color: var(--filledHoverPressedButton);
+	border: 4px solid var(--filledPressedButtonBorder);
+}
+
+.outlinedButton {
+	background-color: var(--outlinedNormalButton);
+}
+
+.outlinedButton:hover {
+	background-color: var(--outlinedHoverPressedButton);
+	border: 4px solid var(--outlinedPressedButtonBorder);
 }
 
 /* HEADER */
@@ -38,23 +89,13 @@ body {
 	width: 200px;
 }
 
-input {
-	background-color: var(--inputNormal);
-	border: none;
-	border-radius: 8px;
-	box-sizing: border-box;
-	padding: 16px 14px;
-	color: #FFF;
-	font-size: var(--bodyFont);
-}
-
-input:hover {
-	background-color: var(--inputHover);
+.formSearch {
+	height: 56px;
+	width: 752px;
 }
 
 #formSearch {
-	height: 56px;
-	width: 752px;
+	width: 100%;
 }
 
 .containerAvatar {
@@ -91,25 +132,39 @@ main .container {
 }
 
 .menuLateralEsquerdo {
-	background-color: #FFF;
-	width: 100px;
+	width: 272px;
 	height: 100px;
-	border: 1px solid #000;
-	flex-grow: 1;
+	margin-right: 10px;
+}
+
+.menuLateralEsquerdo section {
+	display: flex;
+	align-items: center;
+}
+
+.slashIcon {
+	width: 48px;
+	height: 48px;
+	border-radius: 16px;
+	background-color: var(--filledNormalButton);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .editorCodigo {
-	background-color: #FFF;
-	width: 100px;
-	height: 100px;
-	border: 1px solid #000;
-	flex-grow: 3;
+	width: 752px;
+	margin: 0 10px;
+}
+
+.fundoEditor {
+	height: 366px;
+	background-color: var(--fundoEditor);
+	border-radius: 8px;
 }
 
 .menuLateralDireito {
-	background-color: #FFF;
-	width: 100px;
+	width: 272px;
 	height: 100px;
-	border: 1px solid #000;
-	flex-grow: 1;
+	margin-left: 10px;
 }
