@@ -1,0 +1,48 @@
+.mainHeader .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.containerLogo {
+	width: 272px;
+}
+
+.logoAlura {
+	width: 200px;
+}
+
+.formSearch {
+	height: 56px;
+	width: 752px;
+}
+
+#formSearch {
+	width: 100%;
+}
+
+.containerAvatar {
+	width: 272px;
+	display: flex;
+	justify-content: end;
+	/* Faz com que o avatar fique sempre do lado direito da página */
+}
+
+.contextoAvatar {
+	display: flex;
+	align-items: center;
+	padding: 12px;
+}
+
+.contextoAvatar:hover {
+	background-color: var(--iconHover);
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.avatar {
+	height: 32px;
+	width: 32px;
+	border-radius: 100%;
+	margin-right: 8px;
+}

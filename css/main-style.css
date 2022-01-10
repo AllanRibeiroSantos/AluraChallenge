@@ -40,7 +40,7 @@ body {
 	text-transform: uppercase;
 }
 
-input {
+.baseDosInputs {
 	background-color: var(--inputNormal);
 	border: none;
 	border-radius: 8px;
@@ -54,6 +54,8 @@ input:hover {
 	background-color: var(--inputHover);
 }
 
+/* Devo fazer a borda dos botões acionar ao clique do mouse */
+
 .filledButton {
 	background-color: var(--filledNormalButton);
 	color: var(--mainColor);
@@ -61,7 +63,7 @@ input:hover {
 
 .filledButton:hover {
 	background-color: var(--filledHoverPressedButton);
-	border: 4px solid var(--filledPressedButtonBorder);
+	cursor: pointer;
 }
 
 .outlinedButton {
@@ -70,109 +72,5 @@ input:hover {
 
 .outlinedButton:hover {
 	background-color: var(--outlinedHoverPressedButton);
-	border: 4px solid var(--outlinedPressedButtonBorder);
-}
-
-/* HEADER */
-
-.mainHeader .container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.containerLogo {
-	width: 272px;
-}
-
-.logoAlura {
-	width: 200px;
-}
-
-.formSearch {
-	height: 56px;
-	width: 752px;
-}
-
-#formSearch {
-	width: 100%;
-}
-
-.containerAvatar {
-	width: 272px;
-	display: flex;
-	justify-content: end;
-	/* Faz com que o avatar fique sempre do lado direito da página */
-}
-
-.contextoAvatar {
-	display: flex;
-	align-items: center;
-	padding: 12px;
-}
-
-.contextoAvatar:hover {
-	background-color: var(--iconHover);
-	border-radius: 8px;
 	cursor: pointer;
-}
-
-.avatar {
-	height: 32px;
-	width: 32px;
-	border-radius: 100%;
-	margin-right: 8px;
-}
-
-/* MAIN */
-
-main .container {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
-}
-
-.menuLateralEsquerdo {
-	width: 272px;
-	height: 100px;
-	margin-right: 10px;
-}
-
-.menuLateralEsquerdo section {
-	display: flex;
-	align-items: center;
-	margin-top: 16px;
-}
-
-.icons {
-	width: 48px;
-	height: 48px;
-	border-radius: 16px;
-	margin-right: 16px;
-	background-color: var(--outlinedNormalButton);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.icons:hover {
-	background-color: var(--filledNormalButton);
-	/* A ideia é de ficar com essa cor apenas se você estiver na página referente */
-}
-
-.editorCodigo {
-	width: 752px;
-	margin: 0 10px;
-}
-
-.fundoEditor {
-	height: 366px;
-	background-color: var(--fundoEditor);
-	border-radius: 8px;
-}
-
-.menuLateralDireito {
-	width: 272px;
-	height: 100px;
-	margin-left: 10px;
 }

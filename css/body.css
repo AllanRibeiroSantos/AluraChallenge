@@ -1,0 +1,138 @@
+main .container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.menuLateralEsquerdo {
+	width: 272px;
+	height: 100px;
+	margin-right: 10px;
+}
+
+.menuLateralEsquerdo section {
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+}
+
+.icons {
+	width: 48px;
+	height: 48px;
+	border-radius: 16px;
+	margin-right: 16px;
+	background-color: var(--outlinedNormalButton);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icons:hover {
+	background-color: var(--filledNormalButton);
+	/* A ideia é de ficar com essa cor apenas se você estiver na página referente */
+}
+
+.editorCodigo {
+	width: 752px;
+	margin: 0 20px;
+}
+
+.fundoEditor {
+	height: 366px;
+	background-color: var(--fundoEditor);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.editor {
+	width: 688px;
+	height: 302px;
+	background-color: black;
+	border-radius: 8px;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.codeHeader {
+	display: flex;
+}
+
+.circulo {
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	margin-right: 8px;
+}
+
+.circulo1 {
+	background-color: #FF5F56;
+}
+
+.circulo2 {
+	background-color: #FFBD2E;
+}
+
+.circulo3 {
+	background-color: #27C93F;
+}
+
+.codeBody {
+	margin-top: 24px;
+}
+
+.outlinedButton {
+	width: 100%;
+	margin-top: 32px;
+}
+
+.menuLateralDireito {
+	width: 272px;
+	height: 100px;
+	margin-left: 10px;
+}
+
+.formLateral {
+	margin-top: 16px;
+}
+
+.campoDescricao {
+	width: 100%;
+	height: 80px;
+}
+
+.campoDescricao:hover {
+	background-color: var(--inputHover);
+}
+
+.tituloPersonalizacao {
+	margin-top: 40px;
+}
+
+.campoSelect {
+	width: 100%;
+}
+
+.contextoSelecao {
+	width: 100%;
+	height: 56px;
+	margin-top: 16px;
+	border: 1px solid #FFF;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.selecaoDeBG {
+	width: 256px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: var(--fundoEditor);
+}
+
+.filledButton {
+	width: 100%;
+	margin-top: 32px;
+}
